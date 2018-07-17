@@ -1,6 +1,7 @@
 data "kubernetes_service" "kube_svc" {
   metadata {
     name = "${var.kube_service_name}"
+    namespace = "${var.kube_service_namespace}"
   }
 }
 
